@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra(Intent.EXTRA_TEXT, texto); //O Intent carregando o texto e a atividade a iniciar
 
                 try{
-                    startActivity(Intent.createChooser(i, "Escolha o APP")); // aparece para o usuário um menu onde ele escolhe entre vários apps que podem enviar uma mensagem de e-mail. Se não tiver nenhuma app de e-mail instalada,irá aparecer uma mensagem de erro.
+                    startActivity(Intent.createChooser(i, "Escolha o APP")); // aparece para o usuário um menu onde ele escolhe entre vários apps que podem enviar uma mensagem de e-mail. Se não tiver nenhum app de e-mail instalada,irá aparecer uma mensagem de erro.
                 }
                 catch (ActivityNotFoundException e){
                     Toast.makeText(MainActivity.this,"Não há nenhum app que posso realizar essa operação",Toast.LENGTH_LONG).show();
